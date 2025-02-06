@@ -28,3 +28,5 @@ jobs:
           with:
             name: build=artifact
             path: ${{github.workspace}}
+        - name: List files after download
+          run: ls -R ${{ github.workspace }}
